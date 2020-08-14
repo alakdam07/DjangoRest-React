@@ -5,8 +5,8 @@
 
 <div style="text-align:center">
 <img
-    height="80"
-    width="90"
+    height="200"
+    width="400"
     alt="goat"
    src="https://res.cloudinary.com/drewzxzgc/image/upload/v1597393021/zxnnvrm0rjwhxwiz2c52.png"
   />
