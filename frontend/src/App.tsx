@@ -1,13 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './App.css';
 
-function App() {
+interface IData {
+  id?: number;
+  title?: string,
+  date?: Date;
+  completed?: boolean;
+}
 
+function App({ title, date, id, completed }: IData) {
+
+  const [state, setstate] = useState<IData[]>([]);
   useEffect(() => {
     fetchData();
   }, [])
-
 
   const fetchData = async () => {
 
@@ -17,6 +24,7 @@ function App() {
       );
       const data = await response.json();
       console.log(data);
+      setstate(data)
 
     } catch (error) {
       console.log(error, "FAILED TO FETCH");
@@ -27,7 +35,9 @@ function App() {
   return (
     <div className="App">
 
-
+      {
+        state.map((i: IData) => <ul key={i.id}><li>{i.title}</li></ul>)
+      }
 
     </div>
   );

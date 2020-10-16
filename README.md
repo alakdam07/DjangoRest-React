@@ -39,12 +39,12 @@
   - [x] Create React-app
   - [x] Install dependencies
   - [x] Use hooks
-  - [] React-router-dom setup
-  - [] Proxy setting
+  - [ ] React-router-dom setup
+  - [ ] Proxy setting
   - [x] Fetch data
-  - [] Shows data to the browser
+  - [ ] Shows data to the browser
   - [] Add datatable
-  - [] Styling
+  - [ ] Styling
   - [x] Error handaling
   - [] Build production
 - [x] Deployment
